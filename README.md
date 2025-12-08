@@ -5,8 +5,7 @@ A 3D RPG mini-game, designed for a quick-paced action adventure. Follow the hint
 # Implementation
 
 To Do: 
--Include ai agent, movable ai mesh filter perhaps
--Dialogue conversation with cube 
+
 -gun shoot
 -score / objectives
 
