@@ -8,6 +8,8 @@ public class EnemyHealth : MonoBehaviour
     {
         health -= amount;
 
+        Debug.Log("Enemy took damage!");
+
         if (health <= 0)
         {
             Die();
@@ -16,6 +18,12 @@ public class EnemyHealth : MonoBehaviour
 
     void Die()
     {
+        // ADD SCORE BEFORE DESTROY
+        if (ScoreSystem.instance != null)
+        {
+            ScoreSystem.instance.AddScore(1);
+        }
+
         Destroy(gameObject);
     }
 }
